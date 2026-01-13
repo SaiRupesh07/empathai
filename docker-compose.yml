@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: empathai
+      POSTGRES_PASSWORD: empathai123
+      POSTGRES_DB: empathai
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U empathai"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  empathai:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: "postgresql://empathai:empathai123@postgres:5432/empathai"
+      GROQ_API_KEY: ${GROQ_API_KEY}
+      GROQ_MODEL: "llama-3.1-8b-instant"
+      API_HOST: "0.0.0.0"
+      DEBUG: "false"
+    ports:
+      - "8007:8007"
+      - "9090:9090"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped
+    command: >
+      sh -c "python -c 'from app.database.postgres import init_database; init_database()' &&
+             python empathai_groq.py"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@empathai.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+volumes:
+  postgres_data:
+  redis_data:

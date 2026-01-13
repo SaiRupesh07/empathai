@@ -1,0 +1,49 @@
+# ===== CORE =====
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# ===== DATABASE =====
+sqlalchemy==2.0.23
+
+# PostgreSQL drivers (Windows compatible)
+# Use psycopg 3.x which has better Windows support
+psycopg==3.1.17  # Pure Python driver, works everywhere
+
+# Alternative: Use SQLAlchemy with asyncpg for async support
+# asyncpg==0.29.0  # Comment out if having issues
+
+# Migration tool
+alembic==1.13.1
+
+# ===== AI/ML =====
+# Use newer versions compatible with Python 3.14
+numpy==1.26.3  # Updated for Python 3.14 compatibility
+scikit-learn==1.4.0  # Updated version
+sentence-transformers==2.2.2
+
+# PyTorch for sentence-transformers (CPU version for Windows)
+# Will be installed via sentence-transformers dependencies
+
+# ===== GROQ API =====
+groq==0.4.0
+
+# ===== MONITORING =====
+psutil==5.9.7
+prometheus-client==0.19.0
+
+# ===== UTILITIES =====
+python-multipart==0.0.6
+requests==2.31.0
+aiohttp==3.9.1
+jinja2==3.1.2
+click==8.1.7  # Required by some packages
+
+# ===== DEVELOPMENT =====
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+pytest-cov==4.1.0

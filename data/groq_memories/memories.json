@@ -1,0 +1,87 @@
+{
+  "groq_test": {
+    "memories": [
+      {
+        "id": "555ee43a",
+        "category": "fact",
+        "content": "I'm feeling really stressed about a project deadline...",
+        "importance": 0.8,
+        "created_at": "2026-01-11T12:13:04.076295",
+        "access_count": 0
+      },
+      {
+        "id": "be51cba0",
+        "category": "preference",
+        "content": "Hello! I love programming and hiking",
+        "importance": 0.7,
+        "created_at": "2026-01-11T11:48:26.405076",
+        "access_count": 10,
+        "relevance": 6
+      },
+      {
+        "id": "1237ae82",
+        "category": "preference",
+        "content": "Hello! I love programming and hiking",
+        "importance": 0.7,
+        "created_at": "2026-01-11T11:49:45.107906",
+        "access_count": 9,
+        "relevance": 5
+      },
+      {
+        "id": "393010e4",
+        "category": "preference",
+        "content": "Hello! I love programming and hiking",
+        "importance": 0.7,
+        "created_at": "2026-01-11T11:50:16.913654",
+        "access_count": 8,
+        "relevance": 4
+      },
+      {
+        "id": "42ed61e6",
+        "category": "preference",
+        "content": "Hello! I love programming and hiking",
+        "importance": 0.7,
+        "created_at": "2026-01-11T11:50:38.147340",
+        "access_count": 0,
+        "relevance": 3
+      },
+      {
+        "id": "b7eaf946",
+        "category": "preference",
+        "content": "Hello! I love programming and hiking",
+        "importance": 0.7,
+        "created_at": "2026-01-11T12:02:59.538442",
+        "access_count": 0,
+        "relevance": 2
+      },
+      {
+        "id": "4587b6cd",
+        "category": "preference",
+        "content": "Hello! I love programming and hiking",
+        "importance": 0.7,
+        "created_at": "2026-01-11T12:10:35.632551",
+        "access_count": 0,
+        "relevance": 1
+      },
+      {
+        "id": "23ac5f44",
+        "category": "preference",
+        "content": "My favorite hiking spot is the Himalayas! What kind of art do you create?",
+        "importance": 0.7,
+        "created_at": "2026-01-11T12:12:23.880747",
+        "access_count": 0
+      },
+      {
+        "id": "f94ec7ed",
+        "category": "event",
+        "content": "I'm feeling really stressed about a project deadline...",
+        "importance": 0.6,
+        "created_at": "2026-01-11T12:13:04.078149",
+        "access_count": 0
+      }
+    ],
+    "created_at": "2026-01-11T11:48:26.401717",
+    "last_seen": "2026-01-11T12:13:04.077237",
+    "interaction_count": 31
+  }
+}
