@@ -460,15 +460,6 @@ git commit -m "feat: add emotion visualization component"
 git push origin feature/your-feature
 ```
 
----
-
-## 📚 Documentation
-
-- [API Documentation](docs/API.md) - Complete API reference
-- [Architecture Guide](docs/ARCHITECTURE.md) - System design details
-- [Memory System](docs/MEMORY.md) - How memory works
-- [Deployment Guide](docs/DEPLOYMENT.md) - Production deployment
-- [Contributing Guide](CONTRIBUTING.md) - How to contribute
 
 ---
 
