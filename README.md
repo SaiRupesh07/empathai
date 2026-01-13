@@ -578,6 +578,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+## 👨‍💻 Author
+
+**D. Sai Rupesh**  
+B.Tech Computer Science & Engineering  
+National Institute of Technology Patna
+
+- 📧 Email: devarintisairupesh840@gmail.com
+- 💼 GitHub: [SaiRupesh07](https://github.com/SaiRupesh07)
+- 🏫 Institution: NIT Patna
+
+---
+
 ## 🙏 Acknowledgments
 
 - [Groq](https://groq.com) for the ultra-fast LLM API
