@@ -591,20 +591,10 @@ National Institute of Technology Patna
 
 ---
 
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/empathai/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/empathai/discussions)
-- **Email**: support@empathai.com
-- **Documentation**: [docs/](docs/)
-
----
-
 <div align="center">
   <h3>🚀 Ready to experience the future of conversational AI?</h3>
   <p>
     <a href="#-quick-start">Get Started</a> •
-    <a href="#-documentation">Documentation</a> •
     <a href="#-contributing">Contribute</a> •
     <a href="#-license">License</a>
   </p>
