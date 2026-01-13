@@ -571,7 +571,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**D.SAI RUPESH**  
+**DEVARINTI SAI RUPESH**  
 B.Tech Computer Science & Engineering  
 National Institute of Technology Patna
 
